@@ -15,10 +15,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./nav/style.css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -27,26 +24,46 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <style>
+      #div1 {
+        font-weight: bold;
+        position: relative;
+        animation: mymove 5s infinite;
+        justify-content: center;
+        animation-timing-function:ease-in-out;
+      }
+
+      @keyframes mymove {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 200px;
+        }
+      }
+    </style>
     <title>Portfolio</title>
   </head>
   <body>
+
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm bg-light justify-content-center">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-body" href="/index.html">Home</a>
+          <a class="nav-link text-body" href="/index.html">Home |</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-body" href="/nav/about.html">About</a>
+          <a class="nav-link text-body" href="/nav/about.html">About |</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-body" href="/nav/skills.html">Skills</a>
+          <a class="nav-link text-body" href="/nav/skills.html">Skills |</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-body" href="/nav/contact.html">Contact</a>
         </li>
       </ul>
     </nav>
+
     <!-- landing -->
     <div class="container-fluid" style="height: 0">
       <div class="row">
@@ -54,21 +71,21 @@
           class="col-sm-7 p-1 text-body text-center"
           style="margin-top: 100px"
         >
-          <h1 class="display-5" style="margin-top: 15px;" >Portfolio</h1>
+          <h1 class="display-6" style="margin-top: 15px;" >Portfolio</h1>
           <br />
-          <h1 class="display-1">
+          <div id="div1"><h1 class="display-1">
             Nuraan Samodien
-          </h1>
+          </h1></div>
           <br />
           <h1 class="display-6" style="margin-top: 30px;">
             Aspiring Full Stack Developer
           </h1>
 
           <button
-            class="btn btn-secondary btn-gradient"
+            class="btn btn-secondary btn-gradient rounded"
             style="margin-top: 50px;"
           >
-            <a href="./nav/about.html" class="link-dark">MORE>>></a>
+            <a href="./nav/about.html" class="link-light">MORE>>></a>
           </button>
 
           <div class="icons text-center fa-2x mt-5">
@@ -109,6 +126,5 @@
         </div>
       </div>
     </div>
-  
   </body>
 </html>
